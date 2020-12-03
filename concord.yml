@@ -5,7 +5,7 @@ triggers:
       conditions:
         type: push
         payload:
-          ref:  "^(?!^\\/refs\\/tags\\/$).*$"
+                ref:  "^(?!^refs\\/tags\\/$).*$"
 
 flows:
   default:

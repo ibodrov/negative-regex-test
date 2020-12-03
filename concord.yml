@@ -9,4 +9,4 @@ triggers:
 
 flows:
   default:
-    - log: "123"
+    - log: "!!!"

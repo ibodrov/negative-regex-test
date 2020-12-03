@@ -4,8 +4,9 @@ triggers:
       entryPoint: default
       conditions:
         type: push
+        branch: ".*"
         payload:
-                ref:  "^(?!^refs\\/tags\\/$).*$"
+          ref: "^(?!^refs\\/tags\\/$).*$"
 
 flows:
   default:

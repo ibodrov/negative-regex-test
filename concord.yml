@@ -1,0 +1,12 @@
+triggers:
+  - github:
+      version: 2
+      entryPoint: default
+      conditions:
+        type: push
+        payload:
+          ref:  "^(?!^\\/refs\\/tags\\/$).*$"
+
+flows:
+  default:
+    - log: "123"
